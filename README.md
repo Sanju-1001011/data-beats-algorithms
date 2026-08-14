@@ -14,21 +14,21 @@ During the development of this predictor, 7 different machine learning algorithm
 
 <table>
   <tr>
-    <th align="center">❌ BEFORE: Noisy/Raw Data Pipeline</th>
-    <th align="center">✅ AFTER: HP-Filtered Pipeline</th>
+    <th align="center">❌ BEFORE: Unsorted Data Pipeline</th>
+    <th align="center">✅ AFTER: Strictly Sorted & Grouped Pipeline</th>
   </tr>
   <tr>
     <td align="center"><img src="LSTM%20winner.png" alt="LSTM Winning on Noisy Data" width="100%"></td>
     <td align="center"><img src="XGBOOST%20winner.png" alt="XGBoost Winning on Clean Data" width="100%"></td>
   </tr>
   <tr>
-    <td><b>Winner: LSTM Network</b><br>When the timeline contained raw noise, basic differencing, and global median imputation, deep neural networks won by attempting to "guess" through the noise.</td>
-    <td><b>Winner: XGBoost</b><br>When strict chronological sorting, second-derivative acceleration, and the Hodrick-Prescott (HP) Filter were applied, XGBoost completely dominated the leaderboard.</td>
+    <td><b>Winner: LSTM Network</b><br><i>Hint: The HP Filter was used here too!</i> However, because the data lacked strict chronological sorting by country and relied on basic differencing, the HP Filter processed noisy, blended timelines. Deep neural networks won by attempting to "guess" through this structural noise.</td>
+    <td><b>Winner: XGBoost</b><br>When the HP Filter was applied <i>correctly</i> (strictly grouped by country and sorted chronologically), combined with true second-derivative acceleration (`.diff().diff()`), the fog cleared. With pristine signals, XGBoost completely dominated the leaderboard.</td>
   </tr>
 </table>
 
 ### The Takeaway
-By mathematically isolating the true economic cycles (using the HP filter) and measuring the *acceleration* of debt rather than just the speed, the fog of 150 years of data was cleared. Once the data was pristine, **XGBoost** proved to be the most accurate and precise engine for predicting rare financial crises. 
+Both tests utilized the Hodrick-Prescott (HP) filter, but the application made all the difference. By mathematically isolating the true economic cycles strictly within individual country timelines and measuring the true *acceleration* of debt, the data became pristine. Once the data was correctly structured, **XGBoost** proved to be the most accurate and precise engine for predicting rare financial crises. 
 
 *(Note: The original noisy pipeline testing can be found preserved in the `experiments/` folder for reproducibility).*
 
@@ -46,6 +46,12 @@ To handle centuries of extreme economic shifts, the winning pipeline utilizes:
 * **Data Manipulation:** Pandas, NumPy
 * **Frontend:** Streamlit
 
+## 💻 How to Run Locally
+
+**1. Clone the repository and navigate to the project folder:**
+```bash
+git clone [https://github.com/Sanju-1001011/data-beats-algorithms.git](https://github.com/Sanju-1001011/data-beats-algorithms.git)
+cd data-beats-algorithms/"file 2"
 ## 💻 How to Run Locally
 
 **1. Clone the repository and navigate to the project folder:**
