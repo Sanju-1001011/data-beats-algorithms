@@ -3,9 +3,5 @@ pandas
 numpy
 scikit-learn
 xgboost
-statsmodels
 yfinance
-shap
 joblib
-matplotlib
-seaborn
