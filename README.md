@@ -52,3 +52,13 @@ To handle centuries of extreme economic shifts, the winning pipeline utilizes:
 ```bash
 git clone [https://github.com/Sanju-1001011/data-beats-algorithms.git](https://github.com/Sanju-1001011/data-beats-algorithms.git)
 cd data-beats-algorithms/"file 2"
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the interactive dashboard:**
+   ```bash
+   python -m streamlit run app.py
+   ```
