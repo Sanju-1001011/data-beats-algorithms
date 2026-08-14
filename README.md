@@ -8,6 +8,15 @@ An empirical machine learning proof using 150 years of macroeconomic data to dem
 
 This project is an advanced machine learning pipeline designed to predict systemic financial crises using historical macroeconomic data across multiple global economies. 
 
+## 📜 Certification & Validation
+This advanced predictive model was engineered to practically apply and expand upon the core machine learning and data science methodologies I have been certified in. 
+
+<div align="center">
+  <img src="certificate.jpg" alt="Certificate of Achievement" width="80%">
+</div>
+
+---
+
 ## 🏆 The Empirical Proof: Algorithm vs. Preprocessing
 
 During the development of this predictor, 7 different machine learning algorithms were raced head-to-head on the same 150-year dataset. The experiment yielded a profound discovery regarding signal processing.
@@ -45,6 +54,13 @@ To handle centuries of extreme economic shifts, the winning pipeline utilizes:
 * **Econometrics & Signal Processing:** Statsmodels
 * **Data Manipulation:** Pandas, NumPy
 * **Frontend:** Streamlit
+
+## 💻 How to Run Locally
+
+**1. Clone the repository and navigate to the project folder:**
+```bash
+git clone [https://github.com/Sanju-1001011/data-beats-algorithms.git](https://github.com/Sanju-1001011/data-beats-algorithms.git)
+cd data-beats-algorithms/"file 2"
 
 ## 💻 How to Run Locally
 
