@@ -12,7 +12,7 @@ This project is an advanced machine learning pipeline designed to predict system
 This advanced predictive model was engineered to practically apply and expand upon the core machine learning and data science methodologies I have been certified in. 
 
 <div align="center">
-  <img src="certificate.jpg" alt="Certificate of Achievement" width="80%">
+  <img src="certificate.png" alt="Certificate of Achievement" width="80%">
 </div>
 
 ---
